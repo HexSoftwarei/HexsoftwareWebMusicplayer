@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+.player {
+    width: 350px;
+    background: rgb(252, 252, 252);
+    border: 1px solid #63c976;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.1);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0074f0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ffffff;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #d60000;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#progress {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.playlist {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.playlist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.playlist img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.active {
+    font-weight: bold;
+    color: #0c0606;
+}

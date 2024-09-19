@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="player">
+        <div>
+        <h1>Music Player Website</h1>
+       </div>
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul id="playlist">
+               <h2></h2>
+               <h2></h2>
+               <h2></h2>
+            </ul>
+        </div>
+        <div class="controls">
+            <button id="prev">Previous</button>
+            <button id="playPause">Play</button>
+            <button id="next">Next</button>
+            <div class="progress">
+                <input type="range" id="progress" min="0" max="100" value="0">
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
+            <div class="volume">
+                <label for="volume">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUg
+                    AAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB0Ul
+                    EQVR4nO2bu0rEQBSGPwV31cZKRN1OFGvBQrC3sN6ncAsfwU5fwScQRESw
+                    t1O28QKCYCl2ouCuiuAtEsjCEJLdzWw2GeacD06XzJz/T2YgZ05AURRFURRHGEcwa8AdApkA9oAfIEAY68B9JLwTIpiMnvpvTLwIAzaAhwTh3hswBewDf13Ee2v
+                    AJvDYQ7iXBkwDBylCv4Fdnw2oA08p4m+B1eg67wyYAY5ShH9Fu3/VuN4rA+rAc4r4G2Al4R4vDJgFTlKEfwI7wFjKvc4aUAEaQBN473MHj8c5sNxjHicNmAOuLUWH8QF
+                    sA6N9zOWcAVXgagDxZ8BChvmcM6AxgPgwRjLO55wBzVhCp8D8EAU4Z8BbLKFu4r00IMiYkBqAvgEMcwm0gWNgCaFLIIjiBahZjJ97QmUZEMahxfi5J1SmAS2L8XNPqEwDXi3
+                    Gzz2hMg0I6wyiN8FFi/FzT6hoA1rRky9EvIsGFE4g3YB2LKGaNAOa0j+HtxKSElUQqUgviXWKopdSi6LmmxAuh4uEKpH3ZfGseHkwYoPYozET0YejJmKPx01EN0iYiG2RMRHdJGUitk
+                    3ORHSjpInYVlkT0c3SJmLb5U1E/zChKIqiKBTLP8QWNp19hpIRAAAAAElFTkSuQmCC">
+                </label>
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+        <audio id="audio" src="" preload="metadata"></audio>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
